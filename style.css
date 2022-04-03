@@ -2,7 +2,7 @@ body{
     background-color:white;
     text-align: center;
 }
-footer{
+.footer{
     background-color:#0A3641;
     width:100%;
     position: fixed;
