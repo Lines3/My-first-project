@@ -1,4 +1,18 @@
 body{
     background-color:white;
-    text-align:center;
+    text-align: center;
+}
+.footer{
+    background-color:#0A3641;
+    width:100%;
+    position: fixed;
+    color: white;
+    height: 100px;
+}
+.header{
+    background-color:#0A3641;
+    width:100%;
+    position: fixed;
+    color: white;
+    height: 100px;
 }
