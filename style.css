@@ -1,20 +1,52 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
-   min-height: 100%;
-    background-color:white;
-    text-align: center;
-    overflow: scroll;
+    font-family: "playfair display", "arial", "sans-serif";
+    margin: 0 auto;
+    position: absolute;
 }
-.footer{
-    background-color:#0A3641;
-    width:100%;
-    position: fixed;
-    color: white;
-    height: 100px;
+nav{
+    top: 100px;
+    height: 40px;
+    width: 100%;
+    background: #0A3641;
+    margin: auto;
 }
-.header{
-    background-color:#0A3641;
-    width:100%;
-    position: fixed;
+nav a{
     color: white;
+    padding: 20px;
+    text-decoration: none;
+
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav ul{
+    padding: 0px;
+
+    
+}
+img{
+    height: auto;
+    width: 600px;
+    padding: 10px;
+}
+.active{
+    text-decoration: underline;
+
+}
+
+header{
+    min-height: 100px;
     height: 100px;
+    
+}
+
+header img{
+    float: left;
+    height: 100px;
+    width: auto;
+    float: inline-start;
+
 }
