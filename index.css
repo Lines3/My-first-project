@@ -1,195 +1,135 @@
 html{
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth;   
 }
 body{
     font-family: "playfair display", "arial", "sans-serif";
     margin: 0 auto;
-    position: relative;
-    text-align: center;
-    
+    position: relative;    
 }
-
-main{
+Nav,
+#checkbox-menu
+{
+    Display: none;
+}
+main,
+#checkbox-menu,
+header,
+.header img,
+footer,
+img,
+.container-image,
+.container-CTA,
+{
     position: relative;
+}
+main{
     padding: 50px;
     text-align: center;
     margin: 0px 0px 0px 30px;
 }
 nav{
-    display: none;
     top: 100px;
     text-decoration: none;
-    background: #0A3641;
-    position: absolute;
-   
-    
+    position: absolute;   
+}
+Nav,
+header,
+footer{
+    background: #0A3641;  
 }
 #checkbox-menu{
-    display: none;
-    position: relative;
     left: 10px
 }
-
-
-#checkbox-menu:checked ~ nav {
-    display: block;
-    
-    
+#checkbox-menu:checked ~ nav,
+header,
+img,
+nav a
+{
+    display: block; 
 }
-nav, #checkbox-menu{
-    display:none;
-   
- 
-}
-
-
-
-
-
-
-
-
 nav a{
     color: white;
     padding: 10px;
     text-decoration: none;
-    display: block;
     font-size: 1.2rem;
-
-
 }
-nav a:hover{
-    text-decoration: underline;
-    border: 10px;
-}
-
-
-.active{
-    text-decoration: dotted;
+.active,
+a,
+footer
+{
     color: white;
 }
-
 header{
     width: auto;
     height: 80px;
-    background: #0A3641;
-    position: relative;
     color: white;
     font-size: 2.2rem;
-    display: block;
 }
-
 .header img{
-    position: relative;
     float: right;
     height: 43px;
     width: auto;
     border: 20px solid; 
     margin-top: 0px;   
 }
-
 a{
-    color: white;
     text-decoration: none;  
 }
 a:hover{
     text-decoration: underline;
 }
-
 @media (min-width: 600px) {
     nav {
     display: block;
     position: static;
     }
-    
     .menu-icon {
     display: none;
-    
     }
     nav a {
         display: inline;
-        
-    }
-    
+    } 
 }
-
-
 footer{
-    background: #0A3641;
-    color: white;
     text-decoration: none;
-    position:relative;
     bottom: 0;
     width: auto;
     padding: 20px;
-    
-
 }
-
-.image-yellow-side{
-    position: relative;
-    max-width: auto;
-    height:auto;
-    display: block;
-    
-}
-
 img{
-    position: relative;
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 50px 0px 0px 30px
     
- 
+    margin: 50px 0px 0px 30px
 }
-
-
-
+.container-image,
+.container-CTA{
+    display: flex;
+}
+.container-image,
+.container-CTA{
+    flex-direction: column;
+}
 .container-image{
-display: flex; 
-flex-direction: column;
 height: auto;
 width: 400px;
-position: relative;
-
-
 }
-
-.productimage{
-    flex: 1;
-    
+.productimage,
+.product{
+    flex: 1;  
 }
-
-
 @media only screen and (min-width: 600px){
     .container-image{
         flex-direction: row;
     } 
 }
-
 .container-CTA{
-display: flex;
-flex-direction: column;
-position: relative;
 margin: 50px;
-
-
 }
-
 .product{
-flex: 1;
-border: 5px solid #0A3641;
+border: 5px #0A3641;
 padding: 75px
-
-    
-    
-
 }
-
-
-
 @media only screen and (min-width: 600px){
     .container-CTA{
         flex-direction: row;
