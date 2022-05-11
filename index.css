@@ -5,13 +5,18 @@ html{
 body{
     font-family: "playfair display", "arial", "sans-serif";
     margin: 0 auto;
-    position: relative;
-    
-    
 }
-
-main{
+body,
+main,
+#checkbox-menu,
+header,
+footer,
+.header img,
+img
+{
     position: relative;
+}    
+main{
     padding: 50px;
     text-align: center;
     margin: 0px 0px 0px 30px;
@@ -25,111 +30,84 @@ nav{
 }
 #checkbox-menu{
     display: none;
-    position: relative;
     left: 10px
 }
-
-
 #checkbox-menu:checked ~ nav {
-    display: block;
-    
-    
+    display: block;   
 }
 nav, #checkbox-menu{
     display:none;
-   
- 
 }
-
-
-
-
-
-
-
-
 nav a{
-    color: white;
     padding: 10px;
     text-decoration: none;
     display: block;
     font-size: 1.2rem;
-
-
 }
 nav a:hover{
     text-decoration: underline;
     border: 10px;
 }
-
-
 .active{
     text-decoration: dotted;
-    color: white;
 }
-
 header{
     width: auto;
     height: 80px;
-    background: #0A3641;
-    position: relative;
-    color: white;
     font-size: 2.2rem;
     display: block;
 }
-
+nav a,
+.active,
+footer,
+header
+{
+    color: white;
+}
+header,
+footer{
+    background: #0A3641;
+}
 .header img{
-    position: relative;
     float: right;
     height: 43px;
     width: auto;
     border: 20px solid; 
     margin-top: 0px;   
 }
-
 a{
-    color: white;
-    text-decoration: none;  
+    color: white;  
 }
 a:hover{
     text-decoration: underline;
 }
-
 @media (min-width: 600px) {
     nav {
     display: block;
     position: static;
     }
-    
     .menu-icon {
     display: none;
-    
     }
     nav a {
-        display: inline;
-        
+        display: inline;   
     } 
 }
-
+a,
 footer{
-    background: #0A3641;
-    color: white;
-    text-decoration: none;
-    position:relative;
+    text-decoration: none; 
+}
+footer{
     bottom: 0;
     width: auto;
     padding: 20px;
-    min-width: 350;
 }
-
 img{
-    position: relative;
     max-width: 100%;
     height: auto;
     display: block;
     margin: 50px 0px 0px 30px
 }
-
 .container-image{
 display: flex; 
 flex-direction: column;
@@ -137,31 +115,25 @@ height: auto;
 width: 400px;
 position: relative;
 }
-
 .productimage{
-    flex: 1;
-    
+    flex: 1;  
 }
-
 @media only screen and (min-width: 600px){
     .container-image{
         flex-direction: row;
     } 
 }
-
 .container-CTA{
 display: flex;
 flex-direction: column;
 position: relative;
 margin: 50px;
 }
-
 .product{
 flex: 1;
 border: 5px solid #0A3641;
 padding: 75px
 }
-
 @media only screen and (min-width: 600px){
     .container-CTA{
         flex-direction: row;
