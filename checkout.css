@@ -1,0 +1,102 @@
+html{
+    scroll-behavior: smooth;   
+}
+body{
+    font-family: "playfair display", "arial", "sans-serif";
+    margin: 0 auto; 
+}
+body,
+main,
+#checkbox-menu,
+header,
+footer,
+.header img,
+img
+{
+    position: relative;
+}
+main{
+    padding: 50px;
+    text-align: center;
+    margin: 0px 0px 0px 30px;
+}
+nav{
+    top: 100px;
+    text-decoration: none;
+    background: #0A3641;
+    position: absolute;   
+}
+#checkbox-menu{
+    left: 10px
+}
+#checkbox-menu:checked ~ nav {
+    display: block;  
+}
+nav, #checkbox-menu{
+    display:none;
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2rem;
+}
+.active{
+    text-decoration: dotted;  
+}
+header{
+    height: 80px;
+    font-size: 2.2rem;
+    display: block;
+}
+nav a,
+.active,
+footer,
+header
+{
+    color: white;
+}
+header,
+footer{
+    background: #0A3641;
+    width: 100%;
+}
+.header img{
+    float: right;
+    height: 43px;
+    width: auto;
+    border: 20px solid; 
+    margin-top: 0px;   
+}
+a{
+    color: white;   
+}
+a,
+footer{
+    text-decoration: none; 
+}
+a:hover{
+    text-decoration: underline;
+}
+@media (min-width: 350px) {
+    nav {
+    display: block;
+    position: static;
+    }
+    .menu-icon {
+    display: none;
+    }
+    nav a {
+        display: inline;
+    } 
+}
+footer{
+    bottom: 0;
+    padding: 20px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 50px 0px 0px 30px
+}
