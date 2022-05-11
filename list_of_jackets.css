@@ -61,7 +61,7 @@ header
 header,
 footer{
     background: #0A3641;
-    width: auto;
+    width: 100%;
 }
 .header img{
     float: right;
