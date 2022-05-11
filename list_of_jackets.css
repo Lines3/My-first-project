@@ -6,22 +6,27 @@ body{
     margin: 0 auto;
     position: relative;  
 }
-main{
+body,
+main,
+#checkbox-menu,
+header,
+footer,
+{
     position: relative;
+}
+main{
     padding: 50px;
     text-align: center;
     margin: 0px 0px 0px 30px;
 }
 nav{
-    display: none;
+    
     top: 100px;
     text-decoration: none;
     background: #0A3641;
     position: absolute;   
 }
 #checkbox-menu{
-    display: none;
-    position: relative;
     left: 10px
 }
 #checkbox-menu:checked ~ nav {
@@ -37,25 +42,28 @@ nav a{
     display: block;
     font-size: 1.2rem;
 }
-nav a:hover{
-    text-decoration: underline;
-    border: 10px;
-}
 .active{
     text-decoration: dotted;
     color: white;
 }
 header{
-    width: auto;
     height: 80px;
-    background: #0A3641;
-    position: relative;
-    color: white;
     font-size: 2.2rem;
     display: block;
 }
-.header img{
+header,
+footer{
+    background: #0A3641;
+    width: auto;
+    color: white;
+}
+.header img,
+img{
     position: relative;
+}
+
+
+.header img{
     float: right;
     height: 43px;
     width: auto;
@@ -79,20 +87,14 @@ a:hover{
     }
     nav a {
         display: inline;
-        
     } 
 }
 footer{
-    background: #0A3641;
-    color: white;
     text-decoration: none;
-    position:relative;
     bottom: 0;
-    width: auto;
     padding: 20px;
 }
 img{
-    position: relative;
     max-width: 100%;
     height: auto;
     display: block;
