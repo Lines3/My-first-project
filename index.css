@@ -1,52 +1,197 @@
 html{
     scroll-behavior: smooth;
+    
 }
 body{
     font-family: "playfair display", "arial", "sans-serif";
     margin: 0 auto;
-    position: absolute;
+    position: relative;
+    text-align: center;
+    
+}
+
+main{
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    margin: 0px 0px 0px 30px;
 }
 nav{
+    display: none;
     top: 100px;
-    height: 40px;
-    width: 100%;
+    text-decoration: none;
     background: #0A3641;
-    margin: auto;
+    position: absolute;
+   
+    
 }
+#checkbox-menu{
+    display: none;
+    position: relative;
+    left: 10px
+}
+
+
+#checkbox-menu:checked ~ nav {
+    display: block;
+    
+    
+}
+nav, #checkbox-menu{
+    display:none;
+   
+ 
+}
+
+
+
+
+
+
+
+
 nav a{
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
+    display: block;
+    font-size: 1.2rem;
+
 
 }
 nav a:hover{
     text-decoration: underline;
+    border: 10px;
 }
-nav ul{
-    padding: 0px;
 
-    
-}
-img{
-    height: auto;
-    width: 600px;
-    padding: 10px;
-}
+
 .active{
-    text-decoration: underline;
-
+    text-decoration: dotted;
+    color: white;
 }
 
 header{
-    min-height: 100px;
-    height: 100px;
+    width: auto;
+    height: 80px;
+    background: #0A3641;
+    position: relative;
+    color: white;
+    font-size: 2.2rem;
+    display: block;
+}
+
+.header img{
+    position: relative;
+    float: right;
+    height: 43px;
+    width: auto;
+    border: 20px solid; 
+    margin-top: 0px;   
+}
+
+a{
+    color: white;
+    text-decoration: none;  
+}
+a:hover{
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    nav {
+    display: block;
+    position: static;
+    }
+    
+    .menu-icon {
+    display: none;
+    
+    }
+    nav a {
+        display: inline;
+        
+    }
     
 }
 
-header img{
-    float: left;
-    height: 100px;
-    width: auto;
-    float: inline-start;
 
+footer{
+    background: #0A3641;
+    color: white;
+    text-decoration: none;
+    position:relative;
+    bottom: 0;
+    width: auto;
+    padding: 20px;
+    
+
+}
+
+.image-yellow-side{
+    position: relative;
+    max-width: auto;
+    height:auto;
+    display: block;
+    
+}
+
+img{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 50px 0px 0px 30px
+    
+ 
+}
+
+
+
+.container-image{
+display: flex; 
+flex-direction: column;
+height: auto;
+width: 400px;
+position: relative;
+
+
+}
+
+.productimage{
+    flex: 1;
+    
+}
+
+
+@media only screen and (min-width: 600px){
+    .container-image{
+        flex-direction: row;
+    } 
+}
+
+.container-CTA{
+display: flex;
+flex-direction: column;
+position: relative;
+margin: 50px;
+
+
+}
+
+.product{
+flex: 1;
+border: 5px solid #0A3641;
+padding: 75px
+
+    
+    
+
+}
+
+
+
+@media only screen and (min-width: 600px){
+    .container-CTA{
+        flex-direction: row;
+    } 
 }
