@@ -80,7 +80,7 @@ footer{
 a:hover{
     text-decoration: underline;
 }
-@media (min-width: 400px) {
+@media (min-width: 350px) {
     nav {
     display: block;
     position: static;
