@@ -58,15 +58,11 @@ header
 {
     color: white;
 }
-
 header,
 footer{
     background: #0A3641;
     width: auto;
 }
-
-
-
 .header img{
     float: right;
     height: 43px;
@@ -75,8 +71,11 @@ footer{
     margin-top: 0px;   
 }
 a{
-    color: white;
-    text-decoration: none;  
+    color: white;  
+}
+a,
+footer{
+    text-decoration: none; 
 }
 a:hover{
     text-decoration: underline;
@@ -94,7 +93,6 @@ a:hover{
     } 
 }
 footer{
-    text-decoration: none;
     bottom: 0;
     padding: 20px;
 }
@@ -103,8 +101,4 @@ img{
     height: auto;
     display: block;
     margin: 50px 0px 0px 30px
-}
-.purchase_cta{
-    border: 5px solid #0A3641;
-    padding: 10px;
 }
