@@ -119,6 +119,7 @@ footer{
     bottom: 0;
     width: auto;
     padding: 20px;
+    min-width: 350;
 }
 
 img{
