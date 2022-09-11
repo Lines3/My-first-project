@@ -87,7 +87,7 @@ a:hover{
     position: static;
     }
     .menu-icon {
-    display: block;
+    display: none;
     }
     nav a {
         display: inline;   
